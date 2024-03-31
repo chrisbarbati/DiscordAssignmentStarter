@@ -1,0 +1,27 @@
+<body class="addTaskBody">
+  
+<h1 class="addTaskTitle">{{title}}</h1>
+
+<!-- Form to add a new Task to the database -->
+
+<div class="addTaskForm">
+  <form action="/tasks/add" method="POST">
+
+    <select name="interval" required> 
+        <option value="5">5 minutes</option>
+        <option value="10">10 minutes</option>
+        <option value="30">30 minutes</option>
+        <option value="60">60 minutes</option>
+    </select>
+
+    <input type="text" name="description" placeholder="Description" required>
+    <input type="text" name="message" placeholder="Message" required>
+    <input type="text" name="name" placeholder="Name" required>
+    <button class="buttonAddPage" type="submit">Add Task</button>
+  </form>
+  <form action="/" method="GET" style="width: 20%;">
+    <button class="buttonAddPage" type="submit">Back</button>
+  </form>
+</div>
+
+</body>

@@ -1,0 +1,31 @@
+<body class="bodyTasks">
+    
+<h1 class="TasksTitle">{{title}}</h1>
+
+<!-- Get all tasks from the database and display their information -->
+
+
+<div class="containerTasks">
+{{#each tasks}}
+<div class="task">
+    <h2>{{this.title}}</h2>
+    <p><span>Name:</span>  {{this.name}}</p>
+    <p><span>Description:</span>  {{this.description}}</p>
+    <p><span>Date:</span>  {{this.date}}</p>
+    <p><span>Message:</span>  {{this.message}}</p>
+    <p><span>interval:</span>  {{this.interval}}</p>
+    <a href="/tasks/edit/{{this._id}}">Edit</a>
+    <a href="/tasks/delete/{{this._id}}">Delete</a>
+</div>
+{{/each}}
+</div>
+
+<div class="addTaskContainer">
+    <a href="/tasks/add">Add</a>       
+</div>
+<div class="addTaskContainer">
+     <a href="/">Back</a>
+</div>
+
+
+</body>

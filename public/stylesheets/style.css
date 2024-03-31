@@ -1,0 +1,385 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+
+/*  Styling for index (main page)*/
+.bodyHomepage {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  background-image: url('/stylesheets/photo\ 1.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.containerHomepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(32, 77, 129);
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 10px;
+}
+
+.titleHomePage {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 40pt;
+  margin-top: 50px;
+}
+
+.buttonHomePage {
+  margin-bottom: 10px;
+  padding: 25px 100px; 
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  width: 500px; 
+  box-sizing: border-box;
+}
+
+.buttonHomePage:hover {
+  background-color: #4477e4;
+}
+/* Styling for add page/tasks */
+.addTaskBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('/stylesheets/photo\ 1.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addTaskTitle {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  font-size: 35pt;
+  top: 50px; 
+  color: white;
+}
+
+.addTaskForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  width: 60%;
+}
+
+.addTaskForm select,
+.addTaskForm input[type="text"],
+.addTaskForm button {
+  margin-bottom: 15px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttonAddPage{
+  background-color: rgb(47, 161, 218);
+  color: white;
+}
+.buttonAddPage>a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for Tasks page */
+.bodyTasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url('/stylesheets/photo\ 1.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.containerTasks{
+  overflow-y: scroll; 
+}
+
+
+
+
+
+
+/* Styling the title of view task page */
+.TasksTitle {
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-size: 45pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+/* Styling each task box */
+.task {
+  border: 2px solid #333;
+  border-radius: 9px;
+  padding: 40px;
+  margin: 2em;
+  width: 600px;
+  background-color: rgba(46, 144, 193, 9);
+  color: white; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /*overflow-y: scroll;*/
+}
+
+
+
+
+
+
+/* Styling data in the boxes */
+.task p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.task p span{
+  color: black;
+}
+
+
+
+
+
+
+/* Styling data in the buttons */
+.task a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+  width: 80px;
+}
+
+.task a:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+/* Styling the "Add Task" button */
+.addTaskContainer {
+  margin-top: 10px;
+  padding: 30px; 
+  background-color: #4477e4;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+}
+
+.addTaskContainer a {
+  color: yellow;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px; 
+  color: white;
+}
+
+.addTaskContainer:hover {
+  background-color: #0f295c;
+}
+
+.addTaskTitle {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  font-size: 35pt;
+  top: 50px; 
+  color: white;
+}
+
+.addTaskForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  width: 60%;
+}
+
+.addTaskForm select,
+.addTaskForm input[type="text"],
+.addTaskForm button {
+  margin-bottom: 15px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttonAddPage{
+  background-color: rgb(47, 161, 218);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for Chat page */
+.chatBody{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url('/stylesheets/photo\ 1.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.chatBox>h2{
+  padding-bottom: 30px;
+  color: black;
+}
+.chatBox{
+  color:white;
+  font-size: 15pt;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 50px;
+}
+/* Added style for the chat box window showing the past messages  - Christian */
+.chatBoxWindow {
+  background-color: rgba(188, 188, 188, 0.8);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Can be used to align a message left / right. flex-start -> left, flex-end -> right */
+  overflow-y: scroll;
+}
+/* Added style for the messages  - Christian */
+.message {
+  background-color: rgba(0, 68, 255, 0.8);
+  color:rgba(188, 188, 188, 0.8);
+  border-radius: 1em;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.messageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.chatContainer {
+  background-color: rgb(32, 77, 129); 
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+}
+
+input[type="text"] {
+  width: 80%; 
+  padding: 30px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15pt;
+}
+
+ .buttonChat {
+  padding: 10px 50px;
+  border: none;
+  margin-top: 40px;
+  border-radius: 5px;
+  background-color: white; 
+  color: rgb(1, 1, 13); 
+  cursor: pointer;
+  font-size: 20pt; 
+ }
+
+ .buttonChat>a{
+  text-decoration: none;
+ }
+
+button:hover {
+  background-color: lightblue; 
+}
+
+.chatForm{
+  padding: 20px;
+  margin-top: 23px;
+}
+
+
+

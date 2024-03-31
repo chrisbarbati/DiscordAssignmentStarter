@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+<form action="/tasks/edit/" method="POST">
+
+  <input type="text" id="name" name="name" value="{{task.name}}">
+
+  <input type="text" id="description" name="description" value="{{task.description}}">
+
+  <input type="text" id="message" name="message" value="{{task.message}}">
+
+  <select id="intervalDropdown" name="interval"> <!-- Add more intervals later. Text can be whatever we would like (eg. 3 hours) but value must be expressed in minutes (eg. 180) -->
+      <option value="5">5 minutes</option>
+      <option value="10">10 minutes</option>
+      <option value="30">30 minutes</option>
+      <option value="60">60 minutes</option>
+  </select>
+
+  <!-- Hidden input to store the task's ID -->
+  <input type="hidden" name="_id" value="{{task._id}}">
+
+  <button type="submit">Confirm Edits</button>
++
+</form>
+
+<script>
+  //On page load, set the selected dropdown option to the value of the task's interval. 
+  document.getElementById("intervalDropdown").value = {{task.interval}};
+</script>
