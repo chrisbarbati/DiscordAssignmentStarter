@@ -139,6 +139,8 @@ Getting messages is a bit more complicated
         return messages;
     }
 
+### Creating chat.hbs
+
 Now that this basic back-end code is complete, we need to build out chat.hbs. Chat.hbs represents the chat function of the webpage, and will provide a front-end for the user to send and view messages.
 
 CSS is already included with this repository, so we will just worry about the markup:
