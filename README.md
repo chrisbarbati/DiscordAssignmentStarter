@@ -6,6 +6,8 @@ For a complete implementation, see [https://github.com/chrisbarbati/DiscordAssig
 
 ## Installation
 
+The following assumes that you already have a Discord account, server, and bot. If not, follow the slides at [https://docs.google.com/presentation/d/1T6SVcs8Q7f-tl7J50i70xYX3kZ8xHdFSw_JfAcaa0dQ/edit?usp=sharing](https://docs.google.com/presentation/d/1T6SVcs8Q7f-tl7J50i70xYX3kZ8xHdFSw_JfAcaa0dQ/edit?usp=sharing)
+
 1. Clone this repository in a location of your choosing
 2. Open a terminal in that location and run "npm install"
 3. Create a .env file in the directory, and add the following keys:
